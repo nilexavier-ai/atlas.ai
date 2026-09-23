@@ -1,0 +1,12 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/how-it-works", "destination": "/how-it-works/index.html" },
+    { "source": "/features", "destination": "/features/index.html" },
+    { "source": "/solutions", "destination": "/solutions/index.html" },
+    { "source": "/pricing", "destination": "/pricing/index.html" },
+    { "source": "/faq", "destination": "/faq/index.html" },
+    { "source": "/book-demo", "destination": "/book-demo/index.html" }
+  ]
+}
