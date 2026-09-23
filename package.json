@@ -1,19 +1,14 @@
 {
-  "name": "atlas-ai-receptionist",
+  "name": "atlas-ai",
+  "version": "0.0.0",
   "private": true,
-  "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --host 0.0.0.0",
     "build": "vite build",
-    "preview": "vite preview --host 0.0.0.0"
+    "dev": "vite",
+    "preview": "vite preview"
   },
-  "dependencies": {
-    "@vitejs/plugin-react": "latest",
-    "vite": "latest",
-    "react": "latest",
-    "react-dom": "latest",
-    "lucide-react": "^0.468.0"
-  },
-  "devDependencies": {}
+  "devDependencies": {
+    "vite": "^7.1.7"
+  }
 }

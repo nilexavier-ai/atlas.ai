@@ -3,11 +3,207 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Atlas is the AI receptionist that turns every conversation into an opportunity." />
-    <title>Atlas — AI Receptionist</title>
+    <meta name="theme-color" content="#05070b" />
+    <meta name="description" content="Atlas AI is a 24/7 AI receptionist for UK trades and service businesses. Answer every call, capture job details and book appointments directly into your calendar." />
+    <meta name="keywords" content="AI receptionist, AI phone answering, AI receptionist UK, AI receptionist for trades, AI booking assistant, 24/7 call answering" />
+    <meta property="og:title" content="Atlas AI — Turn missed calls into booked jobs" />
+    <meta property="og:description" content="Your AI receptionist answers every call, speaks to customers and books jobs into your calendar — 24/7." />
+    <meta property="og:type" content="website" />
+    <title>Atlas AI | AI Receptionist for UK Trades &amp; Service Businesses</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="announcement">AI receptionists built for businesses that can’t afford to miss a call.</div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Atlas AI home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>ATLAS<span>.AI</span></span>
+      </a>
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a href="#how-it-works">How It Works</a>
+        <a href="#features">Features</a>
+        <a href="#solutions">Solutions</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a class="mobile-nav-cta" href="#book-demo">Book a Demo</a>
+      </nav>
+      <a class="button button-small header-cta" href="#book-demo">Book a Demo</a>
+      <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open navigation">
+        <span></span><span></span>
+      </button>
+    </header>
+
+    <main id="main">
+      <section class="hero section" id="top">
+        <div class="hero-copy">
+          <p class="kicker">AI phone answering for service businesses</p>
+          <h1>Never miss another customer.</h1>
+          <p class="hero-lede">Atlas AI answers your calls, speaks to your customers and books jobs directly into your calendar — 24/7.</p>
+          <div class="button-row">
+            <a class="button" href="#book-demo">Book a Demo <span aria-hidden="true">→</span></a>
+            <a class="button button-secondary" href="#how-it-works">See How It Works</a>
+          </div>
+          <ul class="hero-points" aria-label="Key benefits">
+            <li>Answers in your business name</li>
+            <li>Books into your live calendar</li>
+            <li>Works with your existing number</li>
+          </ul>
+        </div>
+
+        <div class="call-demo" aria-label="Example of Atlas AI turning a call into a booking">
+          <div class="demo-topbar"><span class="live-dot"></span> Live call <span class="call-time">00:42</span></div>
+          <div class="caller">
+            <div class="caller-avatar">SM</div>
+            <div><small>INCOMING CALL</small><strong>Sarah Mitchell</strong><span>Boiler not heating · Birmingham</span></div>
+            <span class="phone-icon" aria-hidden="true">⌕</span>
+          </div>
+          <div class="call-progress" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+          <div class="demo-status"><span class="status-icon">✓</span><div><small>ATLAS AI</small><strong>Call answered</strong></div></div>
+          <div class="demo-status"><span class="status-icon">✓</span><div><small>AVAILABILITY</small><strong>Calendar checked</strong></div></div>
+          <div class="booking-card">
+            <div><small>APPOINTMENT BOOKED</small><strong>Boiler repair</strong><span>Sarah Mitchell · B73 6XX</span></div>
+            <time><strong>10:00</strong><span>Tomorrow</span></time>
+          </div>
+          <div class="demo-footer"><span></span> Synced with your calendar</div>
+        </div>
+      </section>
+
+      <section class="problem section" aria-labelledby="problem-title">
+        <div>
+          <p class="kicker">The missed call problem</p>
+          <h2 id="problem-title">Every missed call could be a lost job.</h2>
+        </div>
+        <div class="problem-copy">
+          <p>You can’t answer the phone when you’re on a job, driving or speaking with another customer. But the person calling still needs help — and may call the next business on the list.</p>
+          <p>Atlas answers immediately, understands what they need and moves the job forward while you keep working.</p>
+        </div>
+        <ul class="busy-list">
+          <li><span>01</span>On the job</li><li><span>02</span>Driving</li><li><span>03</span>With a customer</li><li><span>04</span>After hours</li>
+        </ul>
+      </section>
+
+      <section class="process section" id="how-it-works" aria-labelledby="process-title">
+        <div class="section-heading">
+          <div><p class="kicker">How it works</p><h2 id="process-title">From phone call to confirmed booking.</h2></div>
+          <p>No new process for your team. Atlas fits around the way your business already works.</p>
+        </div>
+        <ol class="steps">
+          <li><span>01</span><div class="step-icon" aria-hidden="true">☎</div><h3>Your customer calls</h3><p>They call your existing business number, just as they do today.</p></li>
+          <li><span>02</span><div class="step-icon" aria-hidden="true">◌</div><h3>Atlas handles the call</h3><p>Atlas speaks naturally, understands the job and collects the details you need.</p></li>
+          <li><span>03</span><div class="step-icon" aria-hidden="true">□</div><h3>The job hits your calendar</h3><p>Atlas checks real availability and books the agreed time directly into your calendar.</p></li>
+        </ol>
+      </section>
+
+      <section class="conversation section" aria-labelledby="conversation-title">
+        <div class="conversation-copy">
+          <p class="kicker">A natural conversation</p>
+          <h2 id="conversation-title">It sounds like your business — not a phone menu.</h2>
+          <p>Atlas asks the right questions, checks your rules and keeps customers informed throughout the call.</p>
+          <div class="calendar-result"><span>✓</span><div><small>GOOGLE CALENDAR</small><strong>Appointment added · Tomorrow, 10:00</strong></div></div>
+        </div>
+        <div class="transcript" aria-label="Example customer call transcript">
+          <div class="transcript-head"><div><span class="live-dot"></span> Call in progress</div><small>ATLAS PLUMBING</small></div>
+          <div class="message customer"><small>CUSTOMER</small><p>“Hi, my boiler has stopped working.”</p></div>
+          <div class="message atlas"><small>ATLAS</small><p>“I can help with that. Can I get your postcode?”</p></div>
+          <div class="message customer"><small>CUSTOMER</small><p>“B73 6XX.”</p></div>
+          <div class="message atlas"><small>ATLAS</small><p>“We have availability tomorrow at 10 AM or 2 PM. Which works better?”</p></div>
+          <div class="message customer"><small>CUSTOMER</small><p>“10 AM.”</p></div>
+          <div class="message atlas final"><small>ATLAS</small><p>“Perfect. I’ve booked you in for tomorrow at 10 AM.”</p></div>
+        </div>
+      </section>
+
+      <section class="features section" id="features" aria-labelledby="features-title">
+        <div class="section-heading">
+          <div><p class="kicker">Built around your working day</p><h2 id="features-title">Everything needed to turn calls into jobs.</h2></div>
+          <p>Practical call handling and booking, configured around your services, availability and rules.</p>
+        </div>
+        <div class="feature-grid">
+          <article><span>24/7</span><h3>Call answering</h3><p>Never lose a customer because nobody was available to pick up.</p></article>
+          <article><span>CAL</span><h3>Appointment booking</h3><p>Checks real availability and books directly into your calendar.</p></article>
+          <article><span>↻</span><h3>Rescheduling</h3><p>Lets customers move existing appointments without interrupting your day.</p></article>
+          <article><span>×</span><h3>Cancellations</h3><p>Handles cancellations and keeps your calendar accurate automatically.</p></article>
+          <article><span>•••</span><h3>Natural conversations</h3><p>Customers speak normally instead of navigating a frustrating phone menu.</p></article>
+          <article><span>ID</span><h3>Information capture</h3><p>Collects names, numbers, locations, job details and preferred times.</p></article>
+          <article><span>SYNC</span><h3>Calendar integration</h3><p>Keeps new bookings synchronized with the calendar your team already uses.</p></article>
+          <article><span>YOU</span><h3>Configured for you</h3><p>Follows your services, coverage areas, availability and booking rules.</p></article>
+        </div>
+      </section>
+
+      <section class="benefits section" id="pricing" aria-labelledby="benefits-title">
+        <div class="benefits-main"><p class="kicker">A better front door for your business</p><h2 id="benefits-title">More jobs in the diary.<br />Less time on the phone.</h2></div>
+        <div class="benefit-list">
+          <div><strong>Every call</strong><span>answered professionally</span></div>
+          <div><strong>Every booking</strong><span>added to your calendar</span></div>
+          <div><strong>Every hour</strong><span>including evenings and weekends</span></div>
+          <div><strong>Your rules</strong><span>without another receptionist</span></div>
+        </div>
+      </section>
+
+      <section class="solutions section" id="solutions" aria-labelledby="solutions-title">
+        <div class="section-heading">
+          <div><p class="kicker">Who it’s for</p><h2 id="solutions-title">Built for businesses that win work on the phone.</h2></div>
+          <p>If customers call to explain a problem and arrange a visit, Atlas can help.</p>
+        </div>
+        <div class="industry-list">
+          <span>Plumbing</span><span>Heating</span><span>Electrical</span><span>HVAC</span><span>Locksmiths</span><span>Property maintenance</span><span>Other service businesses</span>
+        </div>
+      </section>
+
+      <section class="comparison section" aria-labelledby="comparison-title">
+        <div class="section-heading"><div><p class="kicker">A better customer experience</p><h2 id="comparison-title">Don’t leave the next job after the tone.</h2></div></div>
+        <div class="comparison-table">
+          <div class="comparison-column muted-column"><h3>Traditional voicemail</h3><ul><li>Customer leaves a message</li><li>Requires a callback</li><li>Customer may call a competitor</li><li>No automatic booking</li></ul></div>
+          <div class="comparison-column atlas-column"><p class="comparison-label">ATLAS AI</p><h3>Answered and booked</h3><ul><li>Answers immediately</li><li>Talks to the customer</li><li>Checks live availability</li><li>Books the appointment</li></ul></div>
+        </div>
+      </section>
+
+      <section class="final-cta section" id="book-demo" aria-labelledby="cta-title">
+        <div class="cta-copy"><p class="kicker">Ready when your customers call</p><h2 id="cta-title">Stop sending customers to voicemail.</h2><p>Let Atlas AI answer the next call.</p></div>
+        <form class="demo-form" id="contact-form">
+          <div class="form-grid"><label>First name<input name="firstName" type="text" autocomplete="given-name" required /></label><label>Last name<input name="lastName" type="text" autocomplete="family-name" required /></label></div>
+          <label>Work email<input name="email" type="email" autocomplete="email" required /></label>
+          <label>Business name<input name="company" type="text" autocomplete="organization" required /></label>
+          <label>What calls do you need help with?<textarea name="message" rows="3" required></textarea></label>
+          <button class="button" type="submit">Book a Demo <span aria-hidden="true">→</span></button>
+          <p>Submitting opens an email to <a href="mailto:atlasiq26@gmail.com">atlasiq26@gmail.com</a>.</p>
+        </form>
+      </section>
+
+      <section class="faq section" id="faq" aria-labelledby="faq-title">
+        <div class="faq-heading"><p class="kicker">Common questions</p><h2 id="faq-title">Everything you need to know.</h2><p>Still have a question? <a href="mailto:atlasiq26@gmail.com">Talk to our team.</a></p></div>
+        <div class="faq-list">
+          <details><summary>What is an AI receptionist?<span>+</span></summary><p>An AI receptionist answers customer calls, holds a natural conversation, collects the information your business needs and completes actions such as booking an appointment.</p></details>
+          <details><summary>Can Atlas use my existing phone number?<span>+</span></summary><p>Yes. Atlas can work with your existing business number, so customers do not need to change how they contact you.</p></details>
+          <details><summary>Can Atlas book directly into my calendar?<span>+</span></summary><p>Yes. Atlas checks your actual availability and adds confirmed appointments directly to your connected calendar.</p></details>
+          <details><summary>Can customers reschedule or cancel appointments?<span>+</span></summary><p>Yes. Atlas can identify an existing appointment and handle rescheduling or cancellation according to your rules.</p></details>
+          <details><summary>What happens if Atlas cannot answer a question?<span>+</span></summary><p>You decide the fallback. Atlas can take a message, flag the call for follow-up or route the caller according to the process agreed for your business.</p></details>
+          <details><summary>Can I control when Atlas answers calls?<span>+</span></summary><p>Yes. Atlas can answer every call, cover only busy periods, or operate outside your normal opening hours.</p></details>
+          <details><summary>Does Atlas work outside business hours?<span>+</span></summary><p>Yes. Atlas can answer and book calls during evenings, weekends and other times when your team is unavailable.</p></details>
+          <details><summary>Can Atlas be customised for my business?<span>+</span></summary><p>Yes. Atlas is configured around your services, locations, opening hours, availability and specific booking rules.</p></details>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-brand"><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>ATLAS<span>.AI</span></span></a><p>Turning missed calls into booked jobs.</p><a href="mailto:atlasiq26@gmail.com">atlasiq26@gmail.com</a></div>
+      <div><h3>Product</h3><a href="#how-it-works">How It Works</a><a href="#features">Features</a><a href="#book-demo">Book a Demo</a></div>
+      <div><h3>Solutions</h3><a href="#solutions">Trades</a><a href="#solutions">Service businesses</a><a href="#solutions">Property maintenance</a></div>
+      <div><h3>Company</h3><a href="#top">About Atlas</a><a href="mailto:atlasiq26@gmail.com">Contact</a></div>
+      <div><h3>Legal</h3><button type="button" data-dialog="privacy">Privacy Policy</button><button type="button" data-dialog="terms">Terms</button></div>
+      <p class="copyright">© <span id="year"></span> Atlas AI. All rights reserved.</p>
+    </footer>
+
+    <dialog class="legal-dialog" id="legal-dialog">
+      <button class="dialog-close" type="button" aria-label="Close dialog">×</button>
+      <div data-panel="privacy"><p class="kicker">Privacy</p><h2>Privacy Policy</h2><p>Atlas AI only uses information you submit to respond to your enquiry and provide requested services. We do not sell personal information. To request access, correction or deletion, email <a href="mailto:atlasiq26@gmail.com">atlasiq26@gmail.com</a>.</p></div>
+      <div data-panel="terms" hidden><p class="kicker">Terms</p><h2>Website Terms</h2><p>This website provides general information about Atlas AI. Product capabilities and availability may change. Contact our team for the terms that apply to a specific service engagement.</p></div>
+    </dialog>
+
+    <script type="module" src="/main.js"></script>
   </body>
 </html>
