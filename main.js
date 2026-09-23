@@ -66,18 +66,40 @@ navigation?.querySelectorAll('a').forEach((link) => link.addEventListener('click
 }));
 
 const contactForm = document.querySelector('#contact-form');
-contactForm?.addEventListener('submit', (event) => {
+contactForm?.addEventListener('submit', async (event) => {
   event.preventDefault();
-  const form = new FormData(contactForm);
-  const subject = encodeURIComponent(`Atlas AI demo request from ${form.get('company')}`);
-  const body = encodeURIComponent([
-    `Name: ${form.get('firstName')} ${form.get('lastName')}`,
-    `Email: ${form.get('email')}`,
-    `Business: ${form.get('company')}`,
-    '',
-    form.get('message'),
-  ].join('\n'));
-  window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`;
+  const submitButton = contactForm.querySelector('button[type="submit"]');
+  const submitLabel = submitButton.querySelector('[data-submit-label]');
+  const status = contactForm.querySelector('[data-form-status]');
+  if (submitButton.disabled) return;
+
+  submitButton.disabled = true;
+  submitButton.setAttribute('aria-disabled', 'true');
+  submitLabel.textContent = 'Sending…';
+  status.className = 'form-status';
+  status.textContent = 'Sending your demo request…';
+
+  try {
+    const form = new FormData(contactForm);
+    const response = await fetch('/api/book-demo', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(Object.fromEntries(form.entries())),
+    });
+    const result = await response.json().catch(() => ({}));
+    if (!response.ok) throw new Error(result.error || 'Unable to submit your request. Please try again.');
+
+    contactForm.reset();
+    submitLabel.textContent = 'Request received';
+    status.className = 'form-status form-status-success';
+    status.textContent = 'Thank you — Atlas AI received your demo request. We’ll be in touch soon.';
+  } catch (error) {
+    submitButton.disabled = false;
+    submitButton.removeAttribute('aria-disabled');
+    submitLabel.textContent = 'Request My Demo';
+    status.className = 'form-status form-status-error';
+    status.textContent = error.message || 'Unable to submit your request. Please try again.';
+  }
 });
 
 const legalDialog = document.querySelector('#legal-dialog');
